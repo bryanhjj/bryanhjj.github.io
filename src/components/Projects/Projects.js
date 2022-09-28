@@ -6,7 +6,7 @@ import { myProjects } from './myProjects';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-const Projects = (props) => {
+const Projects = () => {
     const [index, setIndex] = useState(0);
 
     let githubLink = myProjects[index].github;
