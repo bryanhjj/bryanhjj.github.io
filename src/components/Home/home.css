@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Silkscreen');
+
+.homeContainer {
+    height: 100vh;
+    background-color: #040219;
+}
+
+.textContainer {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+    padding-left: 50%;
+    color: white;
+    text-align: center;
+}
