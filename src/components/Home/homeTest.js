@@ -43,13 +43,13 @@ const HomeT = () => {
                     className='fontSize'
                     animatePercent={percentShown.itemOne}
                 >
-                    <h1>BRYAN HOW</h1>
+                    <h1 className='name'>BRYAN HOW</h1>
                 </SlideLeft>
 
                 <SlideRight 
                     animatePercent={percentShown.itemTwo}
                 >
-                    <h1>WEBSITE DEVELOPMENT</h1>
+                    <h1 className='wd'>WEBSITE DEVELOPMENT</h1>
                 </SlideRight>
             </div>
         </div>
@@ -59,7 +59,6 @@ const HomeT = () => {
 const SlideLeft = styled.div`
     height: auto;
     transform: translateX(${({ animatePercent }) => (animatePercent ? `-${animatePercent - 100}vh` : '-100vw')});
-    font-family: 'Silkscreen', cursive;
 `;
 
 const SlideRight = styled.div`
