@@ -38,7 +38,7 @@ const HomeT = () => {
 
     return (
         <div className='homeContainer'>
-            <div className='textContainer' ref={refOne}>
+            <div className='homeTextContainer' ref={refOne}>
                 <SlideLeft 
                     className='fontSize'
                     animatePercent={percentShown.itemOne}

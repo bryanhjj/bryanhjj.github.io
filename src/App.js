@@ -1,11 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
-import Projects from './components/Projects/projects.js';
-import Contact from './components/Contact/contact.js';
 import { push as Menu } from 'react-burger-menu'
 import navStyles from './components/NavBar/navBar.js';
+import Projects from './components/Projects/projects.js';
+import Contact from './components/Contact/contact.js';
 import HomeT from './components/Home/homeTest.js';
+import About from './components/About me/about';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </div>
 
         <div id='about'>
+          <About/>
         </div>
 
         <div id='skills'>
