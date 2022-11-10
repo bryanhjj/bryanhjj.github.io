@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+.aboutContainer {
+    background-color: #080612;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.aboutText {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.abtTitleContainer {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+}
+
+.abtTextContainer {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+}

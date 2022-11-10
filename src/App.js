@@ -7,6 +7,7 @@ import Projects from './components/Projects/projects.js';
 import Contact from './components/Contact/contact.js';
 import HomeT from './components/Home/homeTest.js';
 import About from './components/About me/about';
+import Skills from './components/Skills/skills';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         </div>
 
         <div id='skills'>
+          <Skills/>
         </div>
 
         <div id='my-projects'>
