@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+.skillsContainer {
+    background-color: #080612;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sTitleContainer {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+    order: 2;
+}
+
+.skillsTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.allSkills {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+    width: 70vw;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.icons {
+    width: 120px;
+    height: 120px;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.skillDiv {
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    margin: 1vh;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2vw;
+}
+
+.row1, .row3 {
+    justify-content: flex-start;
+}
+
+.row2 {
+    justify-content: flex-end;
+}
