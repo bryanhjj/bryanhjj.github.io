@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { myProjects } from './myProjects';
-import './wtf.css';
-// example from https://github.com/rakumairu/simple-react-carousel/blob/part-4/src/components/Carousel/Carousel.js
-// adjust transition time so we can shorten the wait time from handleTransitionEnd, setTransition(useEffect), and disableBtn
+import './carousel.css';
 
 const Carousel = (props) => {
     const {show, infiniteLoop} = props;
@@ -21,7 +19,7 @@ const Carousel = (props) => {
             if (index === show || index === length) {
                 setTimeout(() => {
                     setTransitionEnabled(true);
-                }, 300);
+                }, 250);
             };
         };
     }, [index, isRepeating, show, length]);
@@ -46,12 +44,12 @@ const Carousel = (props) => {
                 setTransitionEnabled(false);
                 setTimeout(() => {
                     setIndex(length);
-                }, 250);
+                }, 200);
             } else if (index === length + show) {
                 setTransitionEnabled(false);
                 setTimeout(() => {
                     setIndex(show);
-                }, 250);
+                }, 200);
             };
         };
     };
@@ -99,7 +97,7 @@ const Carousel = (props) => {
         setDisBtn(true);
         setTimeout(() => {
             setDisBtn(false);
-        }, 650);
+        }, 550);
     };
 
     return (
@@ -120,7 +118,7 @@ const Carousel = (props) => {
                         <div 
                             className={`carousel-content show-${show}`}
                             style={{transform: `translateX(-${index * (70 / show)}vw)`,
-                                    transition: !transitionEnabled ? 'none' : 'all 200ms linear',
+                                    transition: !transitionEnabled ? 'none' : 'all 150ms linear',
                                 }}
                             onTransitionEnd={() => handleTransitionEnd()} 
                         >
