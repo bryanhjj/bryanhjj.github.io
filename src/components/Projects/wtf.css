@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        width: 80%;
+    }
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.component-container {
+    background-color: #080612;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*
+    width: 1280px;
+    margin: 50px auto;
+    min-height: 200px;
+    */
+}
+
+.pTitleContainer {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+}
+/*
+.card-container {
+    flex-shrink: 0;
+    width: 40vw;
+    height: 45vh;
+    padding: 0vw 5vw 0vw 5vw;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    /*
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: green;
+    color: white;
+    */
+    /*
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.carousel-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.carousel-container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    width: 70vw;
+    position: relative;
+}
+
+.carousel-content-wrapper {
+    width: 70vw;
+    height: 100%;
+}
+
+.carousel-content {
+    display: flex;
+    -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
+    scrollbar-width: none;  /* hide scrollbar in Firefox */
+}
+
+/*
+.carousel-content.show > * {
+    width: calc(70vw / 3); change the '3' accordingly if we change the no. of items shown at a time in the carousel 
+}
+*/
+
+.card-container {
+    flex-shrink: 0;
+    width: calc(70vw / 3);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

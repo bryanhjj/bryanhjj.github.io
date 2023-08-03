@@ -1,9 +1,11 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// this is fucking other stuff up (mainly our carousel)
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import { push as Menu } from 'react-burger-menu'
 import navStyles from './components/NavBar/navBar.js';
-import Projects from './components/Projects/projects.js';
+// import Projects from './components/Projects/projectTest.js';
+import Carousel from './components/Projects/wtf.js';;
 import Contact from './components/Contact/contact.js';
 import HomeT from './components/Home/homeTest.js';
 import About from './components/About me/about';
@@ -38,7 +40,7 @@ function App() {
         </div>
 
         <div id='my-projects'>
-          <Projects/>
+          <Carousel show={3} infiniteLoop/>
         </div>
 
         <div id='contact'>

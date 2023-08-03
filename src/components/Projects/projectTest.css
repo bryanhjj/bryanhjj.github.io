@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        width: 80%;
+    }
+}
+
+.carousel {
+    overflow: hidden;
+    /* */
+    background-color: white;
+    text-align: center;
+    padding: 10vh 0vw 10vh 0vw;
+    width: 70vw; /* divide this by 3 to show 3 objects at once in the carousel */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    /* */
+    display: inline-flex;
+    margin: 0 10vw 0 10vw;
+}
+
+.carousel-item {
+    /*
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: green;
+    color: white;
+    */
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.carousel-container {
+    background-color: #080612;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*
+    width: 1280px;
+    margin: 50px auto;
+    min-height: 200px;
+    */
+}
+
+.pTitleContainer {
+    text-align: center;
+    padding: 10vh 15vh 15vh 10vh;
+}
+
+.card-container {
+    flex-shrink: 0;
+    width: 40vw;
+    height: 45vh;
+    padding: 0vw 5vw 0vw 5vw;
+    box-sizing: border-box;
+}
+
+.carousel-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
