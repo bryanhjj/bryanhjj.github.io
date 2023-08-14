@@ -9,22 +9,27 @@ const HomeT = () => {
     });
     const refOne = useRef(null);
 
+    // consider switching to useEffect for better performance
     useLayoutEffect(() => {
         const topPos = (element) => element.getBoundingClientRect().top;
-        const getHeight = (element) => element.offsetHeight;
+        const getHeight = (element) => element.getBoundingClientRect().height; // offsetHeight if I want element's layout height instead of render
         const div1Pos = topPos(refOne.current);
         const div1Height = getHeight(refOne.current);
+        const initEqua = div1Height - (window.scrollY + window.innerHeight);
 
         const onScroll = () => {
-            const scrollPos = window.scrollY + window.innerHeight;
-
+            const scrollPos = window.scrollY + window.innerHeight; // consider using pageYOffset for cross-browser compatibility
+            console.log(scrollPos);
+            console.log(`div1Pos is ${div1Pos}`);
+            console.log(`div1Height is ${div1Height}, window height is ${window.innerHeight}`);
+            console.log(`initEqua is ${initEqua}`);
             // Element scrolled to
             if (div1Pos < scrollPos) {
-                let itemPercent = ((scrollPos - div1Pos) * 100) / div1Height;
+                let itemPercent = (((scrollPos + initEqua - div1Pos) / div1Height) * 100);
                 // if (itemPercent > 100) itemPercent = 100;
-                if (itemPercent < 0) itemPercent = 0;
+                if (itemPercent < 0 || itemPercent === 0) itemPercent = 0;
                 
-                // seperating into itemOne and itemTwo in case I want to change some stuff
+                // seperating into itemOne and itemTwo in case I want to animate both items separately
                 setPercentShow((prevState) => ({
                     ...prevState, 
                     itemOne: itemPercent,
