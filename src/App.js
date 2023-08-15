@@ -2,7 +2,7 @@ import './App.css';
 import 'animate.css';
 import Carousel from './components/Projects/carousel.js';
 import Contact from './components/Contact/contact.js';
-import HomeT from './components/Home/homeTest.js';
+import Home from './components/Home/home.js';
 import { push as Menu } from 'react-burger-menu';
 import navStyles from './components/NavBar/navBar.js';
 import About from './components/About me/about';
@@ -27,7 +27,7 @@ function App() {
         </Menu>
 
         <div id='home'>
-          <HomeT/>
+          <Home/>
         </div>
 
         <div id='about'>
