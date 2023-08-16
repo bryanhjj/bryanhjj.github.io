@@ -22,8 +22,7 @@ const Home = () => {
             // Element scrolled to
             if (div1Pos < scrollPos) {
                 let itemPercent = (((scrollPos + initEqua - div1Pos) / div1Height) * 100);
-                // if (itemPercent > 100) itemPercent = 100;
-                if (itemPercent < 0 || itemPercent === 1) itemPercent = 0;
+                if (itemPercent < 0) itemPercent = 0;
                 
                 // seperating into itemOne and itemTwo in case I want to animate both items separately
                 setPercentShow((prevState) => ({

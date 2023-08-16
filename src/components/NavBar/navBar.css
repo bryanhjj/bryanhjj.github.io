@@ -1,0 +1,29 @@
+.navBarContainer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #080612;
+    color: white;
+}
+
+.nav-item {
+    float: right;
+}
+
+.nav-item-home {
+    float: left;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a {
+    padding: 1.5vw;
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+}

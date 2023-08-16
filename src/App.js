@@ -3,28 +3,22 @@ import 'animate.css';
 import Carousel from './components/Projects/carousel.js';
 import Contact from './components/Contact/contact.js';
 import Home from './components/Home/home.js';
-import { push as Menu } from 'react-burger-menu';
-import navStyles from './components/NavBar/navBar.js';
+import NavBar from './components/NavBar/navBar.js';
 import About from './components/About me/about';
 import Skills from './components/Skills/skills';
-// this is fucking other stuff up (mainly our carousel)
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* to-do:
+  1) figure out ideal padding for carousel
+  2.1) add an "active" feature, shows the nav item as white background, black text when active
+  3) blue - white - blue - white, or, blue - white - white - blue?
+  4) lighter overall blue, black footer
+*/
 
 function App() {
   return (
     <div className="App">
       <div id='outer-container'>
-        <Menu outerContainerId={'outer-container'} styles={navStyles}>
-          <a className='menu-item' href='#home'>Home</a>
-          <br/>
-          <a className='menu-item' href='#about'>About</a>
-          <br/>
-          <a className='menu-item' href='#skills'>Skills</a>
-          <br/>
-          <a className='menu-item' href='#my-projects'>My projects</a>
-          <br/>
-          <a className='menu-item' href='#contact'>Contact</a>
-        </Menu>
+        <NavBar/>
 
         <div id='home'>
           <Home/>
