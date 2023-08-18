@@ -33,7 +33,9 @@ const Skills = (props) => {
     return (
         <div className="skillsContainer">
             <div className="sTitleContainer">
-                <h1 className="skillsTitle">Skills</h1>
+                <div className="sTitleBackground">
+                    <h1 className="skillsTitle">Skills</h1>
+                </div>
             </div>
 
             <div className="allSkills">

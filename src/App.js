@@ -9,8 +9,7 @@ import Skills from './components/Skills/skills';
 
 /* to-do:
   1) figure out ideal padding for carousel
-  2.1) add an "active" feature, shows the nav item as white background, black text when active
-  3) blue - white - blue - white, or, blue - white - white - blue?
+  2.1) add an "active" feature, shows the nav item as white background, black text when active, also z axis +1
   4) lighter overall blue, black footer
 */
 

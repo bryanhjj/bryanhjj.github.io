@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
 
 .skillsContainer {
-    background-color: #080612;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -10,14 +10,28 @@
 
 .sTitleContainer {
     text-align: center;
-    padding: 10vh 15vh 15vh 10vh;
+    width: 30vw;
+    margin: auto;
     order: 2;
+}
+
+.sTitleBackground {
+    background-color: #080612;
+    color: white;
+    border-radius: 50vh 0 0 50vh;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .skillsTitle {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 3em;
+    position: relative;
+    top: 25%;
 }
 
 .allSkills {
