@@ -2,8 +2,9 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #080612;
+    background-color: #02001f;
     color: white;
+    z-index: 1;
 }
 
 .nav-item {

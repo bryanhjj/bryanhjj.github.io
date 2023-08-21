@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+.contactContainer {
+  background-color: white;
+  color: black;
+  margin-top: 2vw;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.emailContainer,
+.githubContainer {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 1vw;
+  margin: 3vw;
+}
+
+.email, 
+.github {
+  font-family: 'Oswald', sans-serif;
+}
+
+.github a:hover {
+  text-decoration: underline;
+}
+
+/*
 .Contact {
     background-color: #1b494b;
     width: 113.3%;
@@ -6,49 +38,49 @@
     border-radius: 7px 7px 0 0;
   }
   
-  .Title {
+.Title {
     width: 18.2vw;
     padding-top: 12.4vw;
     margin: 0 auto 3.4vw auto;
     color: white;
-  }
+}
   
-  .ContactLinks {
+.ContactLinks {
     padding-bottom: 9vw;
-  }
+}
   
-  .Email,
-  .Github,
-  .Linkedin,
-  .CV {
+.Email,
+.Github,
+.Linkedin,
+.CV {
     display: flex;
     width: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .Email a:hover,
-  .Github a:hover,
-  .Linkedin a:hover,
-  .CV a:hover {
-    text-decoration: underline;
-  }
+.Email a:hover,
+.Github a:hover,
+.Linkedin a:hover,
+.CV a:hover {
+  text-decoration: underline;
+}
   
-  .Email h4 {
-    margin-right: 4vw;
-  }
+.Email h4 {
+  margin-right: 4vw;
+}
   
-  .Github h4,
-  .Linkedin h4,
-  .CV h4 {
-    margin-right: 2vw;
-  }
+.Github h4,
+.Linkedin h4,
+.CV h4 {
+  margin-right: 2vw;
+}
   
-  .Email {
-    color: white;
-  }
-  
+.Email {
+  color: white;
+}
+
   .Github a,
   .CV a {
     color: #c4dec1;
@@ -158,3 +190,4 @@
       margin: 0 auto;
     }
   }
+*/

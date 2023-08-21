@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './contact.css';
+import './contact.css';
 
 // mui setup
 import Typography from '@mui/material/Typography';
@@ -9,17 +9,17 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contact = (props) => {
     return (
-        <Box>
-            <Box className={styles.Email}>
+        <Box className='contactContainer'>
+            <Box className='emailContainer'>
                 <EmailIcon />
-                <Typography variant='body2'>
-                    <a href='bryan.how@live.com'>bryan.how@live.com</a>
+                <Typography variant='body2' className='email'>
+                    bryan.how@live.com
                 </Typography>
             </Box>
 
-            <Box className={styles.Github}>
+            <Box className='githubContainer'>
                 <GitHubIcon />
-                <Typography variant='body2'>
+                <Typography variant='body2' className='github'>
                     <a href='https://github.com/bryanhjj'>Github</a>
                 </Typography>
             </Box>
