@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
 
 .aboutContainer {
+    height: 100vh;
     background-color: white;
     color: black;
     display: flex;

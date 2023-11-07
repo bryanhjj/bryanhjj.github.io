@@ -12,25 +12,45 @@
 }
 
 .indicators > button {
-    margin: 5px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
 }
 
 .component-container {
-    background-color: #02001f;
-    color: white;
+    height: 100vh;
+    background-color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /*
-    width: 1280px;
-    margin: 50px auto;
-    min-height: 200px;
-    */
 }
 
 .pTitleContainer {
     text-align: center;
-    padding: 10vh 15vh 15vh 10vh;
+    width: 30vw;
+    margin: auto;
+}
+
+.pTitleBackground {
+    background-color: #02001f;
+    color: white;
+    border-radius: 0 50vh 50vh 0;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    position: relative;
+    top: 25%;
 }
 
 .carousel-container {

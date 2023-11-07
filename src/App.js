@@ -8,9 +8,9 @@ import About from './components/About me/about';
 import Skills from './components/Skills/skills';
 
 /* to-do:
-  1) figure out ideal padding for carousel
   2.1) add an "active" feature, shows the nav item as white background, black text when active
-  5) change how each skills are presented (maybe another carousel like Microsoft's page)
+  6) home component is causing the website to have empty right space, to fix
+  7) make all redirect links open a new tab
 */
 
 function App() {

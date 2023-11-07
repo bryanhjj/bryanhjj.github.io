@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { myProjects } from './myProjects';
 import './carousel.css';
 
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
 const Carousel = (props) => {
     const {show, infiniteLoop} = props;
     const [index, setIndex] = useState(infiniteLoop ? show : 0);
@@ -103,12 +106,14 @@ const Carousel = (props) => {
     return (
         <div className="component-container">
             <div className='pTitleContainer'>
-                <h1 className='pTitle'>Past Projects</h1>
+                <div className='pTitleBackground'>
+                    <h1 className='pTitle'>Past Projects</h1>
+                </div>
             </div>
 
             <div className='indicators'>
                 <button onClick={prev} disabled={disBtn}>
-                    Prev
+                    <ArrowLeftIcon/>
                 </button>
             </div>
 
@@ -141,7 +146,7 @@ const Carousel = (props) => {
         
             <div className='indicators'>
                 <button onClick={next} disabled={disBtn}>
-                    Next
+                    <ArrowRightIcon/>
                 </button>
             </div>
         </div>
