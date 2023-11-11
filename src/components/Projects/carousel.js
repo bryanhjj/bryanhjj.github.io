@@ -112,7 +112,7 @@ const Carousel = (props) => {
             </div>
 
             <div className='indicators'>
-                <button onClick={prev} disabled={disBtn}>
+                <button onClick={prev} disabled={disBtn} className='left'>
                     <ArrowLeftIcon/>
                 </button>
             </div>
@@ -131,10 +131,7 @@ const Carousel = (props) => {
                             {myProjects.map((p) => {
                                 return (
                                     <div className='card-container'>
-                                        <div className='carousel-item'>
-                                            <img className='carousel-image' src={p.screenshot} alt={p.name}/>
-                                            <h3>{p.name}</h3>
-                                        </div>
+                                        <img className='carousel-image' src={p.screenshot} alt={p.name}/>
                                     </div>
                                 );
                             })}
@@ -145,7 +142,7 @@ const Carousel = (props) => {
             </div>
         
             <div className='indicators'>
-                <button onClick={next} disabled={disBtn}>
+                <button onClick={next} disabled={disBtn} className='right'>
                     <ArrowRightIcon/>
                 </button>
             </div>
