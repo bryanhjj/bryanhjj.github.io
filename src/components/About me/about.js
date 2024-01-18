@@ -16,7 +16,6 @@ const About = () => {
                     I'm a self-taught full-stack developer aiming to further develop my software and web development skills,
                     with my background as an auditor working with different teams and liaising with clients, 
                     I am no stranger to working with different types of people.
-                    Outside of coding, I'm constantly trying to learn new things, be it a foreign language or a new cooking recipe!
                 </p>
             </div>
         </div>

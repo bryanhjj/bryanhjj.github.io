@@ -42,5 +42,7 @@
 
 .abtTextContainer {
     text-align: center;
+    width: 70vw;
     padding: 10vh 15vh 15vh 10vh;
+    margin: auto;
 }
