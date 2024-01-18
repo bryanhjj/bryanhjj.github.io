@@ -69,7 +69,6 @@ const Carousel = (props) => {
                 <div className='card-container'>
                     <div className='carousel-item'>
                         <img className='carousel-image' src={p.screenshot} alt={p.name}/>
-                        <h3>{p.name}</h3>
                     </div>
                 </div>
             );
@@ -88,7 +87,6 @@ const Carousel = (props) => {
                 <div className='card-container'>
                     <div className='carousel-item'>
                         <img className='carousel-image' src={p.screenshot} alt={p.name}/>
-                        <h3>{p.name}</h3>
                     </div>
                 </div>
             );
@@ -120,9 +118,10 @@ const Carousel = (props) => {
             <div className='carousel-container'>
                 <div className='carousel-wrapper'>
                     <div className='carousel-content-wrapper'>
+                        <div className='prev-slides'></div>
                         <div 
                             className={`carousel-content show-${show}`}
-                            style={{transform: `translateX(-${index * (70 / show)}vw)`,
+                            style={{transform: `translateX(-${index * 32}vw)`,
                                     transition: !transitionEnabled ? 'none' : 'all 150ms linear',
                                 }}
                             onTransitionEnd={() => handleTransitionEnd()} 
@@ -137,6 +136,7 @@ const Carousel = (props) => {
                             })}
                             {(length > show && isRepeating) && renderExtraNext()}
                         </div>
+                        <div className='next-slides'></div>
                     </div>
                 </div>
             </div>
@@ -149,5 +149,7 @@ const Carousel = (props) => {
         </div>
     );
 };
+
+//`translateX(-${index * (70 / show)}vw)`
 
 export default Carousel;

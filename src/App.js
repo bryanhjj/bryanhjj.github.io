@@ -8,8 +8,6 @@ import About from './components/About me/about';
 import Skills from './components/Skills/skills';
 
 /* to-do:
-  2.1) add an "active" feature, shows the nav item as white background, black text when active
-  6) home component is causing the website to have empty right space, to fix
   7) make all redirect links open a new tab
 */
 
