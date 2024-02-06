@@ -9,7 +9,7 @@ import Skills from './components/Skills/skills';
 
 /* to-do:
   7) make all redirect links open a new tab
-  8) change footer color
+  9) update carousel items
 */
 
 function App() {

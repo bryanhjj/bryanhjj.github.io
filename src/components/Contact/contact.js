@@ -20,11 +20,11 @@ const Contact = (props) => {
             <Box className='githubContainer'>
                 <GitHubIcon />
                 <Typography variant='body2' className='github'>
-                    <a href='https://github.com/bryanhjj'>Github</a>
+                    <a href='https://github.com/bryanhjj' target='_blank' rel='noreferrer'>Github</a>
                 </Typography>
             </Box>
 
-            <Typography variant='body2' color='text.secondary' align='center' {...props}>
+            <Typography className='copyrightContainer' variant='body2' color='white' align='center' {...props}>
                 Copyright © 69
             </Typography>   
         </Box>  
