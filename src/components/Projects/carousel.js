@@ -68,7 +68,9 @@ const Carousel = (props) => {
             htmlObj.push(
                 <div className='card-container'>
                     <div className='carousel-item'>
-                        <img className='carousel-image' src={p.screenshot} alt={p.name}/>
+                        <a href={p.link} target='_blank' rel='noreferrer'>
+                          <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
+                        </a>
                     </div>
                 </div>
             );
@@ -86,7 +88,9 @@ const Carousel = (props) => {
             htmlObj.push(
                 <div className='card-container'>
                     <div className='carousel-item'>
-                        <img className='carousel-image' src={p.screenshot} alt={p.name}/>
+                        <a href={p.link} target='_blank' rel='noreferrer'>
+                          <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
+                        </a>
                     </div>
                 </div>
             );
@@ -98,7 +102,7 @@ const Carousel = (props) => {
         setDisBtn(true);
         setTimeout(() => {
             setDisBtn(false);
-        }, 550);
+        }, 600);
     };
 
     return (
@@ -130,7 +134,9 @@ const Carousel = (props) => {
                             {myProjects.map((p) => {
                                 return (
                                     <div className='card-container'>
-                                        <img className='carousel-image' src={p.screenshot} alt={p.name}/>
+                                        <a href={p.link} target='_blank' rel='noreferrer'>
+                                          <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
+                                        </a> 
                                     </div>
                                 );
                             })}

@@ -4,7 +4,7 @@ import { skillImages1, skillImages2, skillImages3 } from './skillIndex';
 
 const SkillDivs = (props) => {
     return (
-        <div data-a={props.dataA} className="skillDiv">
+        <div className="skillDiv">
             {props.children}
         </div>
     );
@@ -13,7 +13,7 @@ const SkillDivs = (props) => {
 const getSkills = (images, skills) => {
     images.map(({id, source, name}) => {
         skills.push(
-            <SkillDivs data-a={name} id={id} key={name}>
+            <SkillDivs id={id} key={name}>
                 <img src={source} className='icons' alt={name}/>
             </SkillDivs>
         );
@@ -48,6 +48,7 @@ const Skills = (props) => {
                 <div className="row3">
                     {programSkills3}
                 </div>
+                <p>...and more</p>
             </div>
         </div>
     );

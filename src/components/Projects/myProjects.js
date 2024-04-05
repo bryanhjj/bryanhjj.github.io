@@ -7,27 +7,27 @@ import fifth from '../../assets/5.jpg';
 export const myProjects = [
     {
         name: 'test1',
-        github: 'www.google.com',
-        link: 'www.google.com',
+        github: 'https://www.google.com',
+        link: 'https://www.google.com',
         screenshot: first, 
     }, {
         name: 'test2',
-        github: 'www.google.com',
-        link: 'www.google.com',
+        github: 'https://www.google.com',
+        link: 'https://www.google.com',
         screenshot: second,
     }, {
         name: 'test3',
-        github: 'www.google.com',
-        link: 'www.google.com',
+        github: 'https://www.google.com',
+        link: 'https://www.google.com',
         screenshot: third,
     }, {
         name: 'test4',
-        github: 'www.google.com',
-        link: 'www.google.com',
+        github: 'https://www.google.com',
+        link: 'https://www.google.com',
         screenshot: forth,
     }, {
         name: 'test5',
-        github: 'www.google.com',
-        link: 'www.google.com',
+        github: 'https://www.google.com',
+        link: 'https://www.google.com',
         screenshot: fifth,
     }];

@@ -1,16 +1,26 @@
-const row1 = ['html5', 'css3', 'javascript', 'react',];
+// replacing these with devicon for more consistency
+const row1 = ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',];
 
-const row2 = ['python', 'nodejs', 'expressjs', 'passportjs'];
+const row2 = ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg'];
 
-const row3 = ['sql', 'mongodb', 'github', 'heroku'];
+const row3 = ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg', 
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg'];
 
 
 const getImages = (progName, img) => {
-    progName.forEach((skillName, index) => {
+    progName.forEach((string, index) => {
         img.push({
             id: index + 1,
-            source: process.env.PUBLIC_URL + `/skills/${skillName}.png`,
-            name: skillName,
+            source:  `${string}`,
+            name: index + 1,
         });
     });
 };

@@ -8,8 +8,8 @@ import About from './components/About me/about';
 import Skills from './components/Skills/skills';
 
 /* to-do:
-  7) make all redirect links open a new tab
   9) update carousel items
+  12) better implementation of a responsive website, I hate it but it's important especially in this day and age
 */
 
 function App() {
