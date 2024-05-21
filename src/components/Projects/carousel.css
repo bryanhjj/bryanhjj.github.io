@@ -20,14 +20,14 @@
 }
 
 .left {
-    top: 345vh;
+    top: 355vh;
     left: 32vw;
     background-color: #02001f;
     color: white;
 }
 
 .right {
-    top: 345vh;
+    top: 355vh;
     left: 94vw;
     background-color: #02001f;
     color: white;
@@ -102,6 +102,8 @@
     margin-bottom: 15vh;
     margin-left: 1vw;
     margin-right: 1vw;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .carousel-image {

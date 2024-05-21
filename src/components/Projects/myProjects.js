@@ -1,33 +1,33 @@
-import first from '../../assets/1.jpg';
-import second from '../../assets/2.jpg';
-import third from '../../assets/3.jpg';
-import forth from '../../assets/4.jpg';
-import fifth from '../../assets/5.jpg';
+import first from '../../assets/1.png';
+import second from '../../assets/2.png';
+import third from '../../assets/3.png';
+import forth from '../../assets/4.png';
+import fifth from '../../assets/5.png';
 
 export const myProjects = [
     {
-        name: 'test1',
-        github: 'https://www.google.com',
-        link: 'https://www.google.com',
+        name: 'calculator',
+        github: 'https://github.com/bryanhjj/calculator',
+        link: 'https://bryanhjj.github.io/calculator/',
         screenshot: first, 
     }, {
-        name: 'test2',
-        github: 'https://www.google.com',
-        link: 'https://www.google.com',
+        name: 'weather_app',
+        github: 'https://github.com/bryanhjj/Weather-App',
+        link: 'https://bryanhjj.github.io/Weather-App/',
         screenshot: second,
     }, {
-        name: 'test3',
-        github: 'https://www.google.com',
-        link: 'https://www.google.com',
+        name: 'odinbook',
+        github: 'https://github.com/bryanhjj/odinbook-frontend',
+        link: 'https://bryanhjj.github.io/odinbook-frontend/',
         screenshot: third,
     }, {
-        name: 'test4',
-        github: 'https://www.google.com',
-        link: 'https://www.google.com',
+        name: 'boss_machine',
+        github: 'https://github.com/bryanhjj/Boss-Machine',
+        link: 'https://bryanhjj.github.io/Boss-Machine/',
         screenshot: forth,
     }, {
-        name: 'test5',
-        github: 'https://www.google.com',
-        link: 'https://www.google.com',
+        name: 'shopping_cart',
+        github: 'https://github.com/bryanhjj/Shopping-Cart',
+        link: 'https://bryanhjj.github.io/Shopping-Cart/',
         screenshot: fifth,
     }];
