@@ -42,11 +42,9 @@
     text-decoration: none;
 }
 
-/*
-.nav-link-container:hover {
-    background-color: #111;
+.nav-link:hover {
+    color: hsl(28, 88%, 62%);
 }
-*/
 
 .nav-close {
     position: absolute;

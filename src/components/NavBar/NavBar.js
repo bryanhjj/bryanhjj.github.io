@@ -75,25 +75,5 @@ const NavBar = () => {
         </header>
     );
 };
-
-/*
-let sectionListArray = document.querySelectorAll('section')
-const viewHeight = document.documentElement.clientHeight
-         window.onscroll = (() => {
-            sectionListArray.forEach(function(v) {
-                let rect = v.getBoundingClientRect();
-                let y = rect.y;
-                let bottom = rect.bottom;
-                let height = rect.height;
-                if (y > viewHeight|| bottom+height < viewHeight ) {
-                    v.classList.add('active')
-                } else {
-                    v.classList.remove('active')
-                }
-            })
-        })
-*/
-
-// https://github.com/Taofiqq/navbar-react-css/blob/main/src/NavbarHook/NavbarHook.js (ref)
  
 export default NavBar;
