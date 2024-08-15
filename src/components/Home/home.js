@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import './home.css';
 
@@ -8,13 +8,13 @@ const Home = () => {
         itemTwo: 100
     });
     const refOne = useRef(null);
+    const topPos = (element) => element.getBoundingClientRect().top;
+    // offsetHeight if I want element's layout height instead of render
+    const getHeight = (element) => element.getBoundingClientRect().height;
 
-    // consider switching to useEffect for better performance
-    useLayoutEffect(() => {
-        const topPos = (element) => element.getBoundingClientRect().top;
-        const getHeight = (element) => element.getBoundingClientRect().height; // offsetHeight if I want element's layout height instead of render
-        const div1Pos = topPos(refOne.current);
-        const div1Height = getHeight(refOne.current);
+    useEffect(() => {
+        let div1Pos = topPos(refOne.current);
+        let div1Height = getHeight(refOne.current);
         const initEqua = div1Height - (window.scrollY + window.innerHeight);
 
         const onScroll = () => {

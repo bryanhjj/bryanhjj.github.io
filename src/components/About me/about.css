@@ -29,15 +29,15 @@
 .aboutTitle {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 3em;
-    position: relative;
-    top: 25%;
+    font-size: 3.5vw;
+    text-align: center;
+    padding-top: 13vh;
 }
 
 .aboutText {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 .abtTextContainer {
@@ -45,4 +45,15 @@
     width: 70vw;
     padding: 10vh 15vh 15vh 10vh;
     margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .aboutTitle {
+        padding-top: 16vh;
+        font-size: 4vw;
+    }
+
+    .aboutText {
+        font-size: 3vw;
+    }
 }
