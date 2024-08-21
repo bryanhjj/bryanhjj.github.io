@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { myProjects } from './myProjects';
+import { useMediaQuery } from "react-responsive";
 import './carousel.css';
-
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
@@ -12,6 +12,7 @@ const Carousel = (props) => {
     const [isRepeating, setIsRepeating] = useState(infiniteLoop && length > show);
     const [transitionEnabled, setTransitionEnabled] = useState(true);
     const [disBtn, setDisBtn] = useState(false);
+    const isMobile = useMediaQuery({ maxWidth: "1150px" });
 
     useEffect(() => {
         setIsRepeating(infiniteLoop && length > show);
@@ -125,7 +126,7 @@ const Carousel = (props) => {
                         <div className='prev-slides'></div>
                         <div 
                             className={`carousel-content show-${show}`}
-                            style={{transform: `translateX(-${index * 32}vw)`,
+                            style={{transform: isMobile ? `translateX(-${index * 70}vw)` : `translateX(-${index * 32}vw)`,
                                     transition: !transitionEnabled ? 'none' : 'all 150ms linear',
                                 }}
                             onTransitionEnd={() => handleTransitionEnd()} 

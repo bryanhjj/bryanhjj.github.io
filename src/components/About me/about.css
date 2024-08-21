@@ -49,8 +49,9 @@
 
 @media screen and (max-width: 1150px) {
     .aboutTitle {
-        padding-top: 16vh;
-        font-size: 4vw;
+        padding-top: 17vh;
+        padding-right: 1vw;
+        font-size: 5vw;
     }
 
     .aboutText {

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-// import { useNavigate } from "react-router-dom"; don't need this since it's all on 1 page
 import './navBar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
