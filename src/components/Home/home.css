@@ -28,3 +28,17 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
+
+@media screen and (max-width: 1150px) {
+    .name {
+        font-size: 5vw;
+    }
+
+    .wd {
+        font-size: 5vw;
+    }
+
+    .homeTextContainer {
+        padding-top: 30vh;
+    }
+}
