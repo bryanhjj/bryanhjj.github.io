@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { myProjects } from './myProjects';
 import { useMediaQuery } from "react-responsive";
+import SwipeableViews from 'react-swipeable-views';
 import './carousel.css';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -119,34 +120,50 @@ const Carousel = (props) => {
                     <ArrowLeftIcon/>
                 </button>
             </div>
-
-            <div className='carousel-container'>
-                <div className='carousel-wrapper'>
-                    <div className='carousel-content-wrapper'>
-                        <div className='prev-slides'></div>
-                        <div 
-                            className={`carousel-content show-${show}`}
-                            style={{transform: isMobile ? `translateX(-${index * 70}vw)` : `translateX(-${index * 32}vw)`,
-                                    transition: !transitionEnabled ? 'none' : 'all 150ms linear',
-                                }}
-                            onTransitionEnd={() => handleTransitionEnd()} 
-                        >
-                            {(length > show && isRepeating) && renderExtraPrev()}
-                            {myProjects.map((p) => {
-                                return (
-                                    <div className='card-container'>
-                                        <a href={p.link} target='_blank' rel='noreferrer'>
-                                          <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
-                                        </a> 
-                                    </div>
-                                );
-                            })}
-                            {(length > show && isRepeating) && renderExtraNext()}
+            {/* renders a swipeable version of the carousel if the user is on a mobile device */}
+            { isMobile ? 
+                <SwipeableViews>
+                    {(length > show && isRepeating) && renderExtraPrev()}
+                    {myProjects.map((p) => {
+                        return (
+                            <div className='card-container'>
+                                <a href={p.link} target='_blank' rel='noreferrer'>
+                                    <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
+                                </a> 
+                            </div>
+                            );
+                    })}
+                    {(length > show && isRepeating) && renderExtraNext()}
+                </SwipeableViews>
+                : 
+                <div className='carousel-container'>
+                    <div className='carousel-wrapper'>
+                        <div className='carousel-content-wrapper'>
+                            <div className='prev-slides'></div>
+                            <div 
+                                className={`carousel-content show-${show}`}
+                                style={{transform: isMobile ? `translateX(-${index * 70}vw)` : `translateX(-${index * 32}vw)`,
+                                        transition: !transitionEnabled ? 'none' : 'all 150ms linear',
+                                    }}
+                                onTransitionEnd={() => handleTransitionEnd()}
+                            >
+                                {(length > show && isRepeating) && renderExtraPrev()}
+                                {myProjects.map((p) => {
+                                    return (
+                                        <div className='card-container'>
+                                            <a href={p.link} target='_blank' rel='noreferrer'>
+                                            <img className='carousel-image' src={p.screenshot} alt={p.name}/>  
+                                            </a> 
+                                        </div>
+                                    );
+                                })}
+                                {(length > show && isRepeating) && renderExtraNext()}
+                            </div>
+                            <div className='next-slides'></div>
                         </div>
-                        <div className='next-slides'></div>
                     </div>
                 </div>
-            </div>
+            }
         
             <div className='indicators'>
                 <button onClick={next} disabled={disBtn} className='right'>

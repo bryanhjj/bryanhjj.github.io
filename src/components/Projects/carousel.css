@@ -156,4 +156,8 @@
     .prev-slides, .next-slides {
         display: none;
     }
+
+    .right, .left {
+        display: none;
+    }
 }
