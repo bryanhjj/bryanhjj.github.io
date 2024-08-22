@@ -7,10 +7,6 @@ import NavBar from './components/NavBar/navBar.js';
 import About from './components/About me/about';
 import Skills from './components/Skills/skills';
 
-/* to-do:
-  12) better implementation of a responsive website, I hate it but it's important especially in this day and age
-*/
-
 function App() {
   return (
     <div className="App">
