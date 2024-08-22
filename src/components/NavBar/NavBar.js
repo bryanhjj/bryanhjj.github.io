@@ -6,7 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const NavBar = () => {
     const [isOpen, setOpen] = useState(false);
-    const isMobile = useMediaQuery({ maxWidth: "1150px" });
+    const isMobile = useMediaQuery({ maxWidth: "768px" });
 
     const closeMenuOnMobile = () => {
         if (isMobile) {

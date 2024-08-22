@@ -136,7 +136,7 @@
     right: 0vw;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 768px) {
     .pTitle {
         padding-top: 6vh;
         font-size: 4vw;

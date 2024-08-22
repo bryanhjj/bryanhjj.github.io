@@ -13,7 +13,7 @@ const Carousel = (props) => {
     const [isRepeating, setIsRepeating] = useState(infiniteLoop && length > show);
     const [transitionEnabled, setTransitionEnabled] = useState(true);
     const [disBtn, setDisBtn] = useState(false);
-    const isMobile = useMediaQuery({ maxWidth: "1150px" });
+    const isMobile = useMediaQuery({ maxWidth: "768px" });
 
     useEffect(() => {
         setIsRepeating(infiniteLoop && length > show);

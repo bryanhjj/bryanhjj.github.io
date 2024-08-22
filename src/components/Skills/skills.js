@@ -1,4 +1,7 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay } from 'react-swipeable-views-utils';
 import "./skills.css";
 import { skillImages1, skillImages2, skillImages3 } from './skillIndex';
 
@@ -25,6 +28,8 @@ const Skills = (props) => {
     const programSkills1 = [];
     const programSkills2 = [];
     const programSkills3 = [];
+    const isMobile = useMediaQuery({ maxWidth: "768px" });
+    const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
     getSkills(skillImages1, programSkills1);
     getSkills(skillImages2, programSkills2);
@@ -38,18 +43,33 @@ const Skills = (props) => {
                 </div>
             </div>
 
-            <div className="allSkills">
-                <div className="row1">
-                    {programSkills1}
+            {/* renders an auto-scrolling swipeable carousel for mobile users*/}
+            {isMobile ? 
+                <div className="allSkills">
+                    <AutoPlaySwipeableViews>
+                        {programSkills1}
+                    </AutoPlaySwipeableViews>
+                    <AutoPlaySwipeableViews>
+                        {programSkills2}
+                    </AutoPlaySwipeableViews>
+                    <AutoPlaySwipeableViews>
+                        {programSkills3}
+                    </AutoPlaySwipeableViews>
                 </div>
-                <div className="row2">
-                    {programSkills2}
+            : 
+                <div className="allSkills">
+                    <div className="row1">
+                        {programSkills1}
+                    </div>
+                    <div className="row2">
+                        {programSkills2}
+                    </div>
+                    <div className="row3">
+                        {programSkills3}
+                    </div>
+                    <p>...and more</p>
                 </div>
-                <div className="row3">
-                    {programSkills3}
-                </div>
-                <p>...and more</p>
-            </div>
+            }
         </div>
     );
 };

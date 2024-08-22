@@ -55,6 +55,10 @@
     }
 
     .aboutText {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+
+    .abtTextContainer {
+        padding: 3vh 5vh 3vh 5vh;
     }
 }
