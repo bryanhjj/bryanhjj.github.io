@@ -142,7 +142,7 @@ const Carousel = (props) => {
                             <div className='prev-slides'></div>
                             <div 
                                 className={`carousel-content show-${show}`}
-                                style={{transform: isMobile ? `translateX(-${index * 70}vw)` : `translateX(-${index * 32}vw)`,
+                                style={{transform: isMobile ? `translateX(-${index * 80}vw)` : `translateX(-${index * 32}vw)`,
                                         transition: !transitionEnabled ? 'none' : 'all 150ms linear',
                                     }}
                                 onTransitionEnd={() => handleTransitionEnd()}

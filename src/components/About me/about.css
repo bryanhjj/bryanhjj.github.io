@@ -47,11 +47,11 @@
     margin: auto;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 768px) {
     .aboutTitle {
-        padding-top: 17vh;
+        margin-top: 2vh;
         padding-right: 1vw;
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .aboutText {
@@ -60,5 +60,15 @@
 
     .abtTextContainer {
         padding: 3vh 5vh 3vh 5vh;
+    }
+
+    .abtTitleBackground {
+        width: 20vw;
+        height: 40vh;
+        word-wrap: break-word;
+    }
+
+    .abtTextContainer {
+        width: 80vw;
     }
 }

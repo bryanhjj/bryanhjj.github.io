@@ -81,7 +81,17 @@
 
 @media screen and (max-width: 768px) {
     .skillsTitle{
-        padding-top: 6vh;
-        font-size: 5vw;
+        margin-top: 6vh;
+        font-size: 6vw;
+    }
+
+    .allSkills {
+        width: 80vw;
+    }
+
+    .sTitleBackground {
+        width: 20vw;
+        height: 40vh;
+        word-wrap: break-word;
     }
 }
