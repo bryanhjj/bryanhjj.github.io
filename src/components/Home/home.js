@@ -48,7 +48,7 @@ const Home = () => {
                 <SlideRight 
                     animatePercent={percentShown.itemTwo}
                 >
-                    <h1 className='wd'>WEBSITE DEVELOPMENT</h1>
+                    <h1 className='wd'>FULL STACK DEVELOPER</h1>
                 </SlideRight>
             </div>
         </div>
